@@ -1,4 +1,5 @@
 #!/bin/sh
-cd ~/dev/etherium/Geth/core/vm
-go test -bench BenchmarkPrecompiled -benchtime 10s 1> ~/dev/etherium/benchmarking/rawdata/geth-$(date +'%y%m%d')-ydh.txt 2>&1
+path=~/ydh_workspace/EthereumIPE/
+cd $path/Geth/core/vm
+go test -bench BenchmarkPrecompiled -benchtime 5s -timeout 30m 1> $path/benchmarking/rawdata/geth-$(date +'%y%m%d-%H%M%S')-ydh.txt 2>&1
 echo "benchmarking is done."
