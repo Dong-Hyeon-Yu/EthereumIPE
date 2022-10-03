@@ -1,0 +1,393 @@
+goos: linux
+goarch: amd64
+pkg: github.com/ethereum/go-ethereum/core/vm
+cpu: AMD Ryzen 7 2700X Eight-Core Processor         
+BenchmarkPrecompiledEcrecover/-Gas=3000-16            	  166251	     65243 ns/op	      3000 gas/op	        45.98 mgas/s	     800 B/op	       7 allocs/op
+BenchmarkPrecompiledSha256/128-Gas=108-16             	17429250	       734.3 ns/op	       108.0 gas/op	       147.1 mgas/s	      32 B/op	       1 allocs/op
+BenchmarkPrecompiledRipeMD/128-Gas=1080-16            	 8894268	      1521 ns/op	      1080 gas/op	       710.0 mgas/s	      56 B/op	       2 allocs/op
+BenchmarkPrecompiledIdentity/128-Gas=27-16            	1000000000	         8.612 ns/op	        27.00 gas/op	      3135 mgas/s	       0 B/op	       0 allocs/op
+BenchmarkPrecompiledModExp/eip_example1-Gas=13056-16  	  258567	     50422 ns/op	     13056 gas/op	       258.9 mgas/s	    2681 B/op	      40 allocs/op
+BenchmarkPrecompiledModExp/eip_example2-Gas=13056-16  	 1469184	      8258 ns/op	     13056 gas/op	      1581 mgas/s	     752 B/op	      16 allocs/op
+BenchmarkPrecompiledModExp/nagydani-1-square-Gas=204-16         	 4310650	      2775 ns/op	       204.0 gas/op	        73.52 mgas/s	    1176 B/op	      20 allocs/op
+BenchmarkPrecompiledModExp/nagydani-1-qube-Gas=204-16           	 3296868	      3595 ns/op	       204.0 gas/op	        56.74 mgas/s	    1465 B/op	      21 allocs/op
+BenchmarkPrecompiledModExp/nagydani-1-pow0x10001-Gas=3276-16    	  653035	     17466 ns/op	      3276 gas/op	       187.6 mgas/s	    1961 B/op	      24 allocs/op
+BenchmarkPrecompiledModExp/nagydani-2-square-Gas=665-16         	 2626998	      4577 ns/op	       665.0 gas/op	       145.3 mgas/s	    1849 B/op	      25 allocs/op
+BenchmarkPrecompiledModExp/nagydani-2-qube-Gas=665-16           	 1788855	      6662 ns/op	       665.0 gas/op	        99.82 mgas/s	    2393 B/op	      26 allocs/op
+BenchmarkPrecompiledModExp/nagydani-2-pow0x10001-Gas=10649-16   	  322839	     37270 ns/op	     10649 gas/op	       285.7 mgas/s	    3290 B/op	      29 allocs/op
+BenchmarkPrecompiledModExp/nagydani-3-square-Gas=1894-16        	 1513747	      7921 ns/op	      1894 gas/op	       239.1 mgas/s	    2906 B/op	      25 allocs/op
+BenchmarkPrecompiledModExp/nagydani-3-qube-Gas=1894-16          	  845554	     14129 ns/op	      1894 gas/op	       134.1 mgas/s	    4123 B/op	      26 allocs/op
+BenchmarkPrecompiledModExp/nagydani-3-pow0x10001-Gas=30310-16   	  141177	     85339 ns/op	     30310 gas/op	       355.2 mgas/s	    5853 B/op	      29 allocs/op
+BenchmarkPrecompiledModExp/nagydani-4-square-Gas=5580-16        	  673741	     18684 ns/op	      5580 gas/op	       298.6 mgas/s	    5181 B/op	      25 allocs/op
+BenchmarkPrecompiledModExp/nagydani-4-qube-Gas=5580-16          	  292831	     40838 ns/op	      5580 gas/op	       136.6 mgas/s	   12233 B/op	      27 allocs/op
+BenchmarkPrecompiledModExp/nagydani-4-pow0x10001-Gas=89292-16   	   48121	    234697 ns/op	     89292 gas/op	       380.4 mgas/s	   15688 B/op	      30 allocs/op
+BenchmarkPrecompiledModExp/nagydani-5-square-Gas=17868-16       	  232978	     53112 ns/op	     17868 gas/op	       336.4 mgas/s	    9869 B/op	      26 allocs/op
+BenchmarkPrecompiledModExp/nagydani-5-qube-Gas=17868-16         	   97700	    120944 ns/op	     17868 gas/op	       147.7 mgas/s	   23846 B/op	      28 allocs/op
+BenchmarkPrecompiledModExp/nagydani-5-pow0x10001-Gas=285900-16  	   16704	    729384 ns/op	    285900 gas/op	       392.0 mgas/s	   32700 B/op	      46 allocs/op
+BenchmarkPrecompiledModExpEip2565/eip_example1-Gas=1360-16      	  230080	     50243 ns/op	      1360 gas/op	        27.06 mgas/s	    2689 B/op	      41 allocs/op
+BenchmarkPrecompiledModExpEip2565/eip_example2-Gas=1360-16      	 1418863	      8458 ns/op	      1360 gas/op	       160.8 mgas/s	     760 B/op	      17 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-1-square-Gas=200-16  	 4317993	      2795 ns/op	       200.0 gas/op	        71.55 mgas/s	    1184 B/op	      21 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-1-qube-Gas=200-16    	 3318487	      3632 ns/op	       200.0 gas/op	        55.06 mgas/s	    1473 B/op	      22 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-1-pow0x10001-Gas=341-16         	  691863	     17451 ns/op	       341.0 gas/op	        19.53 mgas/s	    1969 B/op	      25 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-2-square-Gas=200-16             	 2878354	      4160 ns/op	       200.0 gas/op	        48.07 mgas/s	    1713 B/op	      21 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-2-qube-Gas=200-16               	 1922101	      6263 ns/op	       200.0 gas/op	        31.93 mgas/s	    2257 B/op	      22 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-2-pow0x10001-Gas=1365-16        	  314091	     37415 ns/op	      1365 gas/op	        36.48 mgas/s	    3154 B/op	      25 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-3-square-Gas=341-16             	 1608156	      7464 ns/op	       341.0 gas/op	        45.68 mgas/s	    2770 B/op	      21 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-3-qube-Gas=341-16               	  884110	     13769 ns/op	       341.0 gas/op	        24.76 mgas/s	    3987 B/op	      22 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-3-pow0x10001-Gas=5461-16        	  133617	     82528 ns/op	      5461 gas/op	        66.17 mgas/s	    5717 B/op	      25 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-4-square-Gas=1365-16            	  638656	     18287 ns/op	      1365 gas/op	        74.64 mgas/s	    5045 B/op	      21 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-4-qube-Gas=1365-16              	  295872	     39931 ns/op	      1365 gas/op	        34.18 mgas/s	   12096 B/op	      23 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-4-pow0x10001-Gas=21845-16       	   49243	    240638 ns/op	     21845 gas/op	        90.77 mgas/s	   15552 B/op	      26 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-5-square-Gas=5461-16            	  237414	     52433 ns/op	      5461 gas/op	       104.2 mgas/s	    9732 B/op	      22 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-5-qube-Gas=5461-16              	   96051	    120634 ns/op	      5461 gas/op	        45.26 mgas/s	   23708 B/op	      24 allocs/op
+BenchmarkPrecompiledModExpEip2565/nagydani-5-pow0x10001-Gas=87381-16       	   16989	    712609 ns/op	     87381 gas/op	       122.6 mgas/s	   32558 B/op	      42 allocs/op
+BenchmarkPrecompiledBn256Add/chfast1-Gas=150-16                            	  714110	     17706 ns/op	       150.0 gas/op	         8.470 mgas/s	     784 B/op	      16 allocs/op
+BenchmarkPrecompiledBn256Add/chfast2-Gas=150-16                            	  575437	     18070 ns/op	       150.0 gas/op	         8.300 mgas/s	     784 B/op	      16 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio1-Gas=150-16                           	 8406115	      1420 ns/op	       150.0 gas/op	       105.6 mgas/s	     624 B/op	      11 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio2-Gas=150-16                           	 8118355	      1472 ns/op	       150.0 gas/op	       101.9 mgas/s	     688 B/op	      12 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio3-Gas=150-16                           	 8180121	      1477 ns/op	       150.0 gas/op	       101.5 mgas/s	     688 B/op	      12 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio4-Gas=150-16                           	 7834773	      1511 ns/op	       150.0 gas/op	        99.26 mgas/s	     752 B/op	      13 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio5-Gas=150-16                           	 8399665	      1411 ns/op	       150.0 gas/op	       106.3 mgas/s	     624 B/op	      11 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio6-Gas=150-16                           	 6483589	      1854 ns/op	       150.0 gas/op	        80.89 mgas/s	     624 B/op	      11 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio7-Gas=150-16                           	SIGQUIT: quit
+PC=0x46e541 m=0 sigcode=0
+
+goroutine 0 [idle]:
+runtime.futex()
+	/home/yudonghyun/go/src/runtime/sys_linux_amd64.s:559 +0x21 fp=0x7ffc9c0f7290 sp=0x7ffc9c0f7288 pc=0x46e541
+runtime.futexsleep(0x1000000295f?, 0x9c0f7310?, 0x448eeb?)
+	/home/yudonghyun/go/src/runtime/os_linux.go:69 +0x36 fp=0x7ffc9c0f72e0 sp=0x7ffc9c0f7290 pc=0x4361f6
+runtime.notesleep(0x87c8c8)
+	/home/yudonghyun/go/src/runtime/lock_futex.go:160 +0x87 fp=0x7ffc9c0f7318 sp=0x7ffc9c0f72e0 pc=0x40ed67
+runtime.mPark(...)
+	/home/yudonghyun/go/src/runtime/proc.go:1457
+runtime.stopm()
+	/home/yudonghyun/go/src/runtime/proc.go:2239 +0x8c fp=0x7ffc9c0f7348 sp=0x7ffc9c0f7318 pc=0x440b2c
+runtime.findRunnable()
+	/home/yudonghyun/go/src/runtime/proc.go:2866 +0x9e8 fp=0x7ffc9c0f7438 sp=0x7ffc9c0f7348 pc=0x4421c8
+runtime.schedule()
+	/home/yudonghyun/go/src/runtime/proc.go:3206 +0xbe fp=0x7ffc9c0f7470 sp=0x7ffc9c0f7438 pc=0x442ffe
+runtime.park_m(0xc000102b60?)
+	/home/yudonghyun/go/src/runtime/proc.go:3355 +0x14d fp=0x7ffc9c0f74a0 sp=0x7ffc9c0f7470 pc=0x44352d
+runtime.mcall()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:448 +0x43 fp=0x7ffc9c0f74b0 sp=0x7ffc9c0f74a0 pc=0x46a423
+
+goroutine 1 [chan receive, 1 minutes]:
+runtime.gopark(0x0?, 0xc00059d960?, 0x5f?, 0x5?, 0x7f0000000000?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00059d8e0 sp=0xc00059d8c0 pc=0x43cd36
+runtime.chanrecv(0xc000026360, 0x0, 0x1)
+	/home/yudonghyun/go/src/runtime/chan.go:583 +0x49b fp=0xc00059d970 sp=0xc00059d8e0 pc=0x409d5b
+runtime.chanrecv1(0x41cce6?, 0x8b1c20?)
+	/home/yudonghyun/go/src/runtime/chan.go:442 +0x18 fp=0xc00059d998 sp=0xc00059d970 pc=0x409858
+testing.(*B).run1(0xc00056a480)
+	/home/yudonghyun/go/src/testing/benchmark.go:235 +0xb2 fp=0xc00059da58 sp=0xc00059d998 pc=0x4cba72
+testing.(*B).Run(0xc00056a240, {0x69fded?, 0x0?}, 0x6c29a8)
+	/home/yudonghyun/go/src/testing/benchmark.go:676 +0x445 fp=0xc00059db40 sp=0xc00059da58 pc=0x4ce465
+testing.runBenchmarks.func1(0xc00056a240?)
+	/home/yudonghyun/go/src/testing/benchmark.go:550 +0x6e fp=0xc00059db90 sp=0xc00059db40 pc=0x4cd6ee
+testing.(*B).runN(0xc00056a240, 0x1)
+	/home/yudonghyun/go/src/testing/benchmark.go:193 +0x102 fp=0xc00059dc08 sp=0xc00059db90 pc=0x4cb842
+testing.runBenchmarks({0x6a47e6, 0x27}, 0x8b0780?, {0x85b120, 0x3a, 0x40?})
+	/home/yudonghyun/go/src/testing/benchmark.go:559 +0x418 fp=0xc00059dd08 sp=0xc00059dc08 pc=0x4cd398
+testing.(*M).Run(0xc000000b40)
+	/home/yudonghyun/go/src/testing/testing.go:1733 +0x811 fp=0xc00059df00 sp=0xc00059dd08 pc=0x4d8f71
+main.main()
+	_testmain.go:241 +0x1aa fp=0xc00059df80 sp=0xc00059df00 pc=0x62384a
+runtime.main()
+	/home/yudonghyun/go/src/runtime/proc.go:250 +0x212 fp=0xc00059dfe0 sp=0xc00059df80 pc=0x43c972
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00059dfe8 sp=0xc00059dfe0 pc=0x46c661
+
+goroutine 2 [force gc (idle), 10 minutes]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00005cfb0 sp=0xc00005cf90 pc=0x43cd36
+runtime.goparkunlock(...)
+	/home/yudonghyun/go/src/runtime/proc.go:369
+runtime.forcegchelper()
+	/home/yudonghyun/go/src/runtime/proc.go:302 +0xad fp=0xc00005cfe0 sp=0xc00005cfb0 pc=0x43cbcd
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00005cfe8 sp=0xc00005cfe0 pc=0x46c661
+created by runtime.init.6
+	/home/yudonghyun/go/src/runtime/proc.go:290 +0x25
+
+goroutine 3 [GC sweep wait]:
+runtime.gopark(0x87bc01?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00005d790 sp=0xc00005d770 pc=0x43cd36
+runtime.goparkunlock(...)
+	/home/yudonghyun/go/src/runtime/proc.go:369
+runtime.bgsweep(0x0?)
+	/home/yudonghyun/go/src/runtime/mgcsweep.go:297 +0xd7 fp=0xc00005d7c8 sp=0xc00005d790 pc=0x427cb7
+runtime.gcenable.func1()
+	/home/yudonghyun/go/src/runtime/mgc.go:178 +0x26 fp=0xc00005d7e0 sp=0xc00005d7c8 pc=0x41c926
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00005d7e8 sp=0xc00005d7e0 pc=0x46c661
+created by runtime.gcenable
+	/home/yudonghyun/go/src/runtime/mgc.go:178 +0x6b
+
+goroutine 4 [sleep]:
+runtime.gopark(0xc000016050?, 0x9a23122a77b?, 0x0?, 0x0?, 0x6c3130?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00050a730 sp=0xc00050a710 pc=0x43cd36
+runtime.goparkunlock(...)
+	/home/yudonghyun/go/src/runtime/proc.go:369
+runtime.(*scavengerState).sleep(0x87bee0, 0x40f4e4e000000000)
+	/home/yudonghyun/go/src/runtime/mgcscavenge.go:468 +0x125 fp=0xc00050a7a0 sp=0xc00050a730 pc=0x425f25
+runtime.bgscavenge(0x0?)
+	/home/yudonghyun/go/src/runtime/mgcscavenge.go:626 +0x7f fp=0xc00050a7c8 sp=0xc00050a7a0 pc=0x42631f
+runtime.gcenable.func2()
+	/home/yudonghyun/go/src/runtime/mgc.go:179 +0x26 fp=0xc00050a7e0 sp=0xc00050a7c8 pc=0x41c8c6
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00050a7e8 sp=0xc00050a7e0 pc=0x46c661
+created by runtime.gcenable
+	/home/yudonghyun/go/src/runtime/mgc.go:179 +0xaa
+
+goroutine 5 [finalizer wait, 10 minutes]:
+runtime.gopark(0x87c780?, 0xc000007860?, 0x0?, 0x0?, 0xc00005c770?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00005c628 sp=0xc00005c608 pc=0x43cd36
+runtime.goparkunlock(...)
+	/home/yudonghyun/go/src/runtime/proc.go:369
+runtime.runfinq()
+	/home/yudonghyun/go/src/runtime/mfinal.go:180 +0x10f fp=0xc00005c7e0 sp=0xc00005c628 pc=0x41ba2f
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00005c7e8 sp=0xc00005c7e0 pc=0x46c661
+created by runtime.createfing
+	/home/yudonghyun/go/src/runtime/mfinal.go:157 +0x45
+
+goroutine 112 [GC worker (idle), 10 minutes]:
+runtime.gopark(0xc00005e760?, 0x480e37?, 0xb0?, 0xe7?, 0x4d76cb?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00005e750 sp=0xc00005e730 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc00005e7e0 sp=0xc00005e750 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00005e7e8 sp=0xc00005e7e0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 113 [GC worker (idle)]:
+runtime.gopark(0x9a1f56b6f94?, 0x1?, 0x1c?, 0xf6?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00005ef50 sp=0xc00005ef30 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc00005efe0 sp=0xc00005ef50 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00005efe8 sp=0xc00005efe0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 114 [GC worker (idle)]:
+runtime.gopark(0x9a1f095bfab?, 0x3?, 0x85?, 0x82?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000058750 sp=0xc000058730 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc0000587e0 sp=0xc000058750 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc0000587e8 sp=0xc0000587e0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 115 [GC worker (idle)]:
+runtime.gopark(0x9a1f56b8180?, 0x1?, 0x86?, 0x32?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000058f50 sp=0xc000058f30 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc000058fe0 sp=0xc000058f50 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc000058fe8 sp=0xc000058fe0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 116 [GC worker (idle)]:
+runtime.gopark(0x9a1ed8ffcd6?, 0x3?, 0xf4?, 0x82?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000059750 sp=0xc000059730 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc0000597e0 sp=0xc000059750 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc0000597e8 sp=0xc0000597e0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 130 [GC worker (idle)]:
+runtime.gopark(0x9a1f56b8054?, 0x1?, 0x74?, 0x1c?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000508750 sp=0xc000508730 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc0005087e0 sp=0xc000508750 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc0005087e8 sp=0xc0005087e0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 131 [GC worker (idle)]:
+runtime.gopark(0x8b1c20?, 0x3?, 0xb6?, 0x19?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000508f50 sp=0xc000508f30 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc000508fe0 sp=0xc000508f50 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc000508fe8 sp=0xc000508fe0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 117 [GC worker (idle)]:
+runtime.gopark(0x9a1f56c2f1c?, 0x3?, 0x1?, 0x55?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000059f50 sp=0xc000059f30 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc000059fe0 sp=0xc000059f50 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc000059fe8 sp=0xc000059fe0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 118 [GC worker (idle)]:
+runtime.gopark(0x9a1f56c6da7?, 0x3?, 0x37?, 0x1e?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00005a750 sp=0xc00005a730 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc00005a7e0 sp=0xc00005a750 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00005a7e8 sp=0xc00005a7e0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 146 [GC worker (idle)]:
+runtime.gopark(0x99cbc28722b?, 0x1?, 0x55?, 0x39?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00005f750 sp=0xc00005f730 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc00005f7e0 sp=0xc00005f750 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00005f7e8 sp=0xc00005f7e0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 147 [GC worker (idle)]:
+runtime.gopark(0x9a1f56b805e?, 0x3?, 0xa2?, 0x2d?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00005ff50 sp=0xc00005ff30 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc00005ffe0 sp=0xc00005ff50 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00005ffe8 sp=0xc00005ffe0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 132 [GC worker (idle)]:
+runtime.gopark(0x9a1f56c6f5f?, 0x3?, 0x11?, 0x23?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000509750 sp=0xc000509730 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc0005097e0 sp=0xc000509750 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc0005097e8 sp=0xc0005097e0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 119 [GC worker (idle)]:
+runtime.gopark(0x9a1f56b8574?, 0x1?, 0x90?, 0x63?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00005af50 sp=0xc00005af30 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc00005afe0 sp=0xc00005af50 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00005afe8 sp=0xc00005afe0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 148 [GC worker (idle)]:
+runtime.gopark(0x9a1f56b8108?, 0x1?, 0x6c?, 0xbb?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000504750 sp=0xc000504730 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc0005047e0 sp=0xc000504750 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc0005047e8 sp=0xc0005047e0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 149 [GC worker (idle)]:
+runtime.gopark(0x9a1f56b7f81?, 0x1?, 0x2a?, 0x2d?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000504f50 sp=0xc000504f30 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc000504fe0 sp=0xc000504f50 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc000504fe8 sp=0xc000504fe0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 150 [GC worker (idle)]:
+runtime.gopark(0x9a1f095be24?, 0x3?, 0xaa?, 0xb?, 0x0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc000505750 sp=0xc000505730 pc=0x43cd36
+runtime.gcBgMarkWorker()
+	/home/yudonghyun/go/src/runtime/mgc.go:1235 +0xf1 fp=0xc0005057e0 sp=0xc000505750 pc=0x41ea71
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc0005057e8 sp=0xc0005057e0 pc=0x46c661
+created by runtime.gcBgMarkStartWorkers
+	/home/yudonghyun/go/src/runtime/mgc.go:1159 +0x25
+
+goroutine 1291 [chan receive]:
+runtime.gopark(0xc0000acd80?, 0xc00059ba38?, 0x5f?, 0x5?, 0x48f0c0?)
+	/home/yudonghyun/go/src/runtime/proc.go:363 +0xd6 fp=0xc00059b9b8 sp=0xc00059b998 pc=0x43cd36
+runtime.chanrecv(0xc0000261e0, 0x0, 0x1)
+	/home/yudonghyun/go/src/runtime/chan.go:583 +0x49b fp=0xc00059ba48 sp=0xc00059b9b8 pc=0x409d5b
+runtime.chanrecv1(0x4c?, 0xc00059bb98?)
+	/home/yudonghyun/go/src/runtime/chan.go:442 +0x18 fp=0xc00059ba70 sp=0xc00059ba48 pc=0x409858
+testing.(*B).doBench(0xc00056a900)
+	/home/yudonghyun/go/src/testing/benchmark.go:285 +0x7f fp=0xc00059bac0 sp=0xc00059ba70 pc=0x4cc15f
+testing.(*benchContext).processBench(0xc000277b78, 0x238?)
+	/home/yudonghyun/go/src/testing/benchmark.go:589 +0x3aa fp=0xc00059bc28 sp=0xc00059bac0 pc=0x4cdaca
+testing.(*B).run(0xc00056a900?)
+	/home/yudonghyun/go/src/testing/benchmark.go:276 +0x67 fp=0xc00059bc58 sp=0xc00059bc28 pc=0x4cbf07
+testing.(*B).Run(0xc00056a480, {0xc00001c460?, 0xc00059bde8?}, 0xc000000000)
+	/home/yudonghyun/go/src/testing/benchmark.go:677 +0x453 fp=0xc00059bd40 sp=0xc00059bc58 pc=0x4ce473
+github.com/ethereum/go-ethereum/core/vm.benchmarkPrecompiled({0x697e6a?, 0xc000100001?}, {{0xc0005b6180, 0x180}, {0xc0000ac680, 0x80}, 0x96, {0xc00001c360, 0x8}, 0x0}, ...)
+	/home/yudonghyun/dev/etherium/Geth/core/vm/contracts_test.go:165 +0x313 fp=0xc00059be18 sp=0xc00059bd40 pc=0x6164d3
+github.com/ethereum/go-ethereum/core/vm.benchJson({0x699162?, 0x480e37?}, {0x697e6a, 0x2}, 0xc00056a480)
+	/home/yudonghyun/dev/etherium/Geth/core/vm/contracts_test.go:312 +0x147 fp=0xc00059bef0 sp=0xc00059be18 pc=0x617cc7
+github.com/ethereum/go-ethereum/core/vm.BenchmarkPrecompiledBn256Add(0xc00056a480?)
+	/home/yudonghyun/dev/etherium/Geth/core/vm/contracts_test.go:244 +0x34 fp=0xc00059bf28 sp=0xc00059bef0 pc=0x6171d4
+testing.(*B).runN(0xc00056a480, 0x1)
+	/home/yudonghyun/go/src/testing/benchmark.go:193 +0x102 fp=0xc00059bfa0 sp=0xc00059bf28 pc=0x4cb842
+testing.(*B).run1.func1()
+	/home/yudonghyun/go/src/testing/benchmark.go:233 +0x59 fp=0xc00059bfe0 sp=0xc00059bfa0 pc=0x4cbe19
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00059bfe8 sp=0xc00059bfe0 pc=0x46c661
+created by testing.(*B).run1
+	/home/yudonghyun/go/src/testing/benchmark.go:226 +0x9c
+
+goroutine 1362 [runnable]:
+github.com/ethereum/go-ethereum/crypto/bn256/cloudflare.(*gfP).Unmarshal(0xc00039f100?, {0xc00011c040?, 0x40?, 0x80?})
+	/home/yudonghyun/dev/etherium/Geth/crypto/bn256/cloudflare/gfp.go:61 +0x165 fp=0xc00006abf0 sp=0xc00006abe8 pc=0x5ab825
+github.com/ethereum/go-ethereum/crypto/bn256/cloudflare.(*G1).Unmarshal(0xc000375030, {0xc00011c040, 0x40, 0x80})
+	/home/yudonghyun/dev/etherium/Geth/crypto/bn256/cloudflare/bn256.go:164 +0xf0 fp=0xc00006ac80 sp=0xc00006abf0 pc=0x5a7bb0
+github.com/ethereum/go-ethereum/core/vm.newCurvePoint({0xc00011c040, 0x40, 0x80})
+	/home/yudonghyun/dev/etherium/Geth/core/vm/contracts.go:401 +0x48 fp=0xc00006acb8 sp=0xc00006ac80 pc=0x5f6168
+github.com/ethereum/go-ethereum/core/vm.runBn256Add({0xc00011c000, 0xc0, 0xc0})
+	/home/yudonghyun/dev/etherium/Geth/core/vm/contracts.go:424 +0x10c fp=0xc00006ad08 sp=0xc00006acb8 pc=0x5f636c
+github.com/ethereum/go-ethereum/core/vm.(*bn256AddIstanbul).Run(0x8b0a38?, {0xc00011c000?, 0x2?, 0x0?})
+	/home/yudonghyun/dev/etherium/Geth/core/vm/contracts.go:443 +0x27 fp=0xc00006ad30 sp=0xc00006ad08 pc=0x5f6487
+github.com/ethereum/go-ethereum/core/vm.RunPrecompiledContract({0x70bbc8, 0x8b0a38}, {0xc00011c000, 0xc0, 0xc0}, 0x96)
+	/home/yudonghyun/dev/etherium/Geth/core/vm/contracts.go:159 +0x97 fp=0xc00006ad68 sp=0xc00006ad30 pc=0x5f4437
+github.com/ethereum/go-ethereum/core/vm.benchmarkPrecompiled.func1(0xc00056a900)
+	/home/yudonghyun/dev/etherium/Geth/core/vm/contracts_test.go:171 +0x159 fp=0xc00006aec8 sp=0xc00006ad68 pc=0x616679
+testing.(*B).runN(0xc00056a900, 0xf4240)
+	/home/yudonghyun/go/src/testing/benchmark.go:193 +0x102 fp=0xc00006af40 sp=0xc00006aec8 pc=0x4cb842
+testing.(*B).launch(0xc00056a900)
+	/home/yudonghyun/go/src/testing/benchmark.go:334 +0x1c5 fp=0xc00006afc8 sp=0xc00006af40 pc=0x4cc405
+testing.(*B).doBench.func1()
+	/home/yudonghyun/go/src/testing/benchmark.go:284 +0x26 fp=0xc00006afe0 sp=0xc00006afc8 pc=0x4cc206
+runtime.goexit()
+	/home/yudonghyun/go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00006afe8 sp=0xc00006afe0 pc=0x46c661
+created by testing.(*B).doBench
+	/home/yudonghyun/go/src/testing/benchmark.go:284 +0x6c
+
+rax    0xca
+rbx    0x0
+rcx    0x46e543
+rdx    0x0
+rdi    0x87c8c8
+rsi    0x80
+rbp    0x7ffc9c0f72d0
+rsp    0x7ffc9c0f7288
+r8     0x0
+r9     0x0
+r10    0x0
+r11    0x286
+r12    0x22d
+r13    0x9
+r14    0x87c1e0
+r15    0x0
+rip    0x46e541
+rflags 0x286
+cs     0x33
+fs     0x0
+gs     0x0
+*** Test killed with quit: ran too long (11m0s).
+exit status 2
+FAIL	github.com/ethereum/go-ethereum/core/vm	660.008s

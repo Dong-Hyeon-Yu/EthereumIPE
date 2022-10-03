@@ -1,0 +1,55 @@
+goos: linux
+goarch: amd64
+pkg: github.com/ethereum/go-ethereum/core/vm
+cpu: AMD Ryzen 7 2700X Eight-Core Processor         
+BenchmarkPrecompiledEcrecover/-Gas=3000-16            	  166406	     65570 ns/op	      3000 gas/op	        45.75 mgas/s	     800 B/op	       7 allocs/op
+BenchmarkPrecompiledSha256/128-Gas=108-16             	15873189	       741.4 ns/op	       108.0 gas/op	       145.7 mgas/s	      32 B/op	       1 allocs/op
+BenchmarkPrecompiledRipeMD/128-Gas=1080-16            	 7832455	      1462 ns/op	      1080 gas/op	       738.5 mgas/s	      56 B/op	       2 allocs/op
+BenchmarkPrecompiledIdentity/128-Gas=27-16            	1000000000	         8.466 ns/op	        27.00 gas/op	      3189 mgas/s	       0 B/op	       0 allocs/op
+BenchmarkPrecompiledModExp/eip_example1-Gas=13056-16  	  227732	     49224 ns/op	     13056 gas/op	       265.2 mgas/s	    2681 B/op	      40 allocs/op
+BenchmarkPrecompiledModExpEip2565/eip_example1-Gas=1360-16         	  227606	     48825 ns/op	      1360 gas/op	        27.85 mgas/s	    2689 B/op	      41 allocs/op
+BenchmarkPrecompiledBn256Add/chfast1-Gas=150-16                    	  574237	     17900 ns/op	       150.0 gas/op	         8.370 mgas/s	     784 B/op	      16 allocs/op
+BenchmarkPrecompiledBn256Add/chfast2-Gas=150-16                    	  643123	     18197 ns/op	       150.0 gas/op	         8.240 mgas/s	     784 B/op	      16 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio1-Gas=150-16                   	 8484542	      1409 ns/op	       150.0 gas/op	       106.4 mgas/s	     624 B/op	      11 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio2-Gas=150-16                   	 8106174	      1474 ns/op	       150.0 gas/op	       101.8 mgas/s	     688 B/op	      12 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio3-Gas=150-16                   	 8124594	      1474 ns/op	       150.0 gas/op	       101.7 mgas/s	     688 B/op	      12 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio4-Gas=150-16                   	 7874283	      1509 ns/op	       150.0 gas/op	        99.39 mgas/s	     752 B/op	      13 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio5-Gas=150-16                   	 8481434	      1391 ns/op	       150.0 gas/op	       107.8 mgas/s	     624 B/op	      11 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio6-Gas=150-16                   	 6459754	      1851 ns/op	       150.0 gas/op	        81.04 mgas/s	     624 B/op	      11 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio7-Gas=150-16                   	 6519178	      1879 ns/op	       150.0 gas/op	        79.84 mgas/s	     624 B/op	      11 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio8-Gas=150-16                   	 6263797	      1952 ns/op	       150.0 gas/op	        76.84 mgas/s	     688 B/op	      12 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio9-Gas=150-16                   	 6441054	      1876 ns/op	       150.0 gas/op	        79.93 mgas/s	     624 B/op	      11 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio10-Gas=150-16                  	 6396822	      1878 ns/op	       150.0 gas/op	        79.88 mgas/s	     624 B/op	      11 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio11-Gas=150-16                  	  584518	     17906 ns/op	       150.0 gas/op	         8.370 mgas/s	     784 B/op	      16 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio12-Gas=150-16                  	  586896	     18311 ns/op	       150.0 gas/op	         8.190 mgas/s	     784 B/op	      16 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio13-Gas=150-16                  	  620521	     18613 ns/op	       150.0 gas/op	         8.050 mgas/s	     784 B/op	      16 allocs/op
+BenchmarkPrecompiledBn256Add/cdetrio14-Gas=150-16                  	 3912646	      3110 ns/op	       150.0 gas/op	        48.23 mgas/s	     752 B/op	      15 allocs/op
+BenchmarkPrecompiledBn256Fp12Mul/Pair(2*g1,_g2)_*_Pair(3*g1,_g2)_==_Pair(5*g1,_g2)-Gas=100000-16         	  923179	     12397 ns/op	    100000 gas/op	      8066 mgas/s	    1544 B/op	       5 allocs/op
+BenchmarkPrecompiledBn256Fp12Mul/Pair(g1,_3*g2)_*_Pair(g1,_5*g2)_==_Pair(g1,_8*g2)-Gas=100000-16         	  907083	     12689 ns/op	    100000 gas/op	      7881 mgas/s	    1544 B/op	       5 allocs/op
+BenchmarkPrecompiledBn256Fp12Mul/Pair(2*g1,_3*g2)_*_Pair(3*g1,_5*g2)_==_Pair(g1,_21*g2)-Gas=100000-16    	  955118	     12555 ns/op	    100000 gas/op	      7965 mgas/s	    1544 B/op	       5 allocs/op
+BenchmarkPrecompiledBn256Fp12Mul/Pair(x*g1,_g2)_*_Pair(y*g1,_5*g2)_==_Pair(x*g1,_y*g2)-Gas=100000-16     	  920359	     12617 ns/op	    100000 gas/op	      7926 mgas/s	    1544 B/op	       5 allocs/op
+BenchmarkPrecompiledBn256ScalarMul/chfast1-Gas=6000-16                                                   	  137084	     90623 ns/op	      6000 gas/op	        66.20 mgas/s	    1288 B/op	      26 allocs/op
+BenchmarkPrecompiledBn256ScalarMul/chfast2-Gas=6000-16                                                   	  113742	     97873 ns/op	      6000 gas/op	        61.30 mgas/s	    1497 B/op	      29 allocs/op
+BenchmarkPrecompiledBn256ScalarMul/chfast3-Gas=6000-16                                                   	  115537	     95201 ns/op	      6000 gas/op	        63.02 mgas/s	    1497 B/op	      29 allocs/op
+BenchmarkPrecompiledBn256ScalarMul/cdetrio1-Gas=6000-16                                                  	  109410	    102398 ns/op	      6000 gas/op	        58.59 mgas/s	    1521 B/op	      28 allocs/op
+BenchmarkPrecompiledBn256ScalarMul/cdetrio6-Gas=6000-16                                                  	  120444	    100833 ns/op	      6000 gas/op	        59.50 mgas/s	    1521 B/op	      28 allocs/op
+BenchmarkPrecompiledBn256ScalarMul/cdetrio11-Gas=6000-16                                                 	  115171	    105095 ns/op	      6000 gas/op	        57.09 mgas/s	    1521 B/op	      28 allocs/op
+BenchmarkPrecompiledBn256Pairing/jeff1-Gas=113000-16                                                     	    3208	   3445521 ns/op	    113000 gas/op	        32.79 mgas/s	  103952 B/op	     980 allocs/op
+BenchmarkPrecompiledBn256Pairing/jeff2-Gas=113000-16                                                     	    3220	   3438954 ns/op	    113000 gas/op	        32.85 mgas/s	  103952 B/op	     980 allocs/op
+BenchmarkPrecompiledBn256Pairing/jeff3-Gas=113000-16                                                     	    3492	   3397205 ns/op	    113000 gas/op	        33.26 mgas/s	  103952 B/op	     980 allocs/op
+BenchmarkPrecompiledBn256Pairing/jeff4-Gas=147000-16                                                     	    2590	   4569663 ns/op	    147000 gas/op	        32.16 mgas/s	  152576 B/op	    1458 allocs/op
+BenchmarkPrecompiledBn256Pairing/jeff5-Gas=147000-16                                                     	    2253	   4653232 ns/op	    147000 gas/op	        31.59 mgas/s	  152576 B/op	    1458 allocs/op
+BenchmarkPrecompiledBn256Pairing/jeff6-Gas=113000-16                                                     	    4027	   3419924 ns/op	    113000 gas/op	        33.04 mgas/s	  103920 B/op	     979 allocs/op
+BenchmarkPrecompiledBn256Pairing/empty_data-Gas=45000-16                                                 	   13888	    865201 ns/op	     45000 gas/op	        52.01 mgas/s	    6784 B/op	      24 allocs/op
+BenchmarkPrecompiledBn256Pairing/one_point-Gas=79000-16                                                  	    5802	   2134752 ns/op	     79000 gas/op	        37.00 mgas/s	   55328 B/op	     501 allocs/op
+BenchmarkPrecompiledBn256Pairing/two_point_match_2-Gas=113000-16                                         	    3477	   3403035 ns/op	    113000 gas/op	        33.20 mgas/s	  103952 B/op	     980 allocs/op
+BenchmarkPrecompiledBn256Pairing/two_point_match_3-Gas=113000-16                                         	    3556	   3432496 ns/op	    113000 gas/op	        32.92 mgas/s	  103952 B/op	     980 allocs/op
+BenchmarkPrecompiledBn256Pairing/two_point_match_4-Gas=113000-16                                         	    3170	   3456235 ns/op	    113000 gas/op	        32.69 mgas/s	  103952 B/op	     980 allocs/op
+BenchmarkPrecompiledBn256Pairing/ten_point_match_1-Gas=385000-16                                         	     812	  13534927 ns/op	    385000 gas/op	        28.44 mgas/s	  492881 B/op	    4794 allocs/op
+BenchmarkPrecompiledBn256Pairing/ten_point_match_2-Gas=385000-16                                         	     906	  13919432 ns/op	    385000 gas/op	        27.65 mgas/s	  492881 B/op	    4794 allocs/op
+BenchmarkPrecompiledBn256Pairing/ten_point_match_3-Gas=113000-16                                         	    3169	   3418470 ns/op	    113000 gas/op	        33.05 mgas/s	  103952 B/op	     980 allocs/op
+BenchmarkPrecompiledBlake2F/vector_4-Gas=0-16                                                            	67191466	       188.2 ns/op	         0 gas/op	         0 mgas/s	      64 B/op	       1 allocs/op
+BenchmarkPrecompiledBlake2F/vector_5-Gas=12-16                                                           	30020887	       394.4 ns/op	        12.00 gas/op	        30.42 mgas/s	      64 B/op	       1 allocs/op
+BenchmarkPrecompiledBlake2F/vector_6-Gas=12-16                                                           	31226420	       396.6 ns/op	        12.00 gas/op	        30.25 mgas/s	      64 B/op	       1 allocs/op
+BenchmarkPrecompiledBlake2F/vector_7-Gas=1-16                                                            	59232999	       205.3 ns/op	         1.000 gas/op	         4.870 mgas/s	      64 B/op	       1 allocs/op
+BenchmarkPrecompiledBlake2F/vector_8-Gas=8000000-16                                                      	     177	  67393834 ns/op	   8000000 gas/op	       118.7 mgas/s	      64 B/op	       1 allocs/op
