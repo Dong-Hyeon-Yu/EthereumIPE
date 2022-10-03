@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[24]",
+						"name": "",
+						"type": "uint256[24]"
+					}
+				],
+				"name": "bn256Fp12Mul",
+				"outputs": [
+					{
+						"internalType": "uint256[12]",
+						"name": "",
+						"type": "uint256[12]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"dev/etherium/Geth/.solidity/fp12CallTest.sol": "Precompile"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"dev/etherium/Geth/.solidity/fp12CallTest.sol": {
+			"keccak256": "0xf6dbddec40ab2aa1a45bf364ccff54f68e1d966a7333570439e828497c7fc2e1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fb2d781acc975c78ff308fd9e990c3a9371c20ab66a34ebdbb73d970626f3878",
+				"dweb:/ipfs/QmUhk8JxYQufumb2iZW8kFnCiLJoYzNpccKZsUnGEa3Erb"
+			]
+		}
+	},
+	"version": 1
+}

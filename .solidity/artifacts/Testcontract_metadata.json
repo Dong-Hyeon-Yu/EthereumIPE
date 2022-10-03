@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "input",
+						"type": "uint256[24]"
+					}
+				],
+				"name": "test",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"name": "res",
+						"type": "uint256[12]"
+					}
+				],
+				"name": "Debug",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"dev/etherium/Geth/.solidity/fp12CallTest.sol": "Testcontract"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"dev/etherium/Geth/.solidity/fp12CallTest.sol": {
+			"keccak256": "0x8dc15a6acb31ec9db616f57cac52b704d90293fe28fb8ebb1b23b5bf281894f8",
+			"urls": [
+				"bzzr://4632391fdc9b92d73f273ca1c78460c682d615ac5c35549987b43e94f2d9a156"
+			]
+		}
+	},
+	"version": 1
+}

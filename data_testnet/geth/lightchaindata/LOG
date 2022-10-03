@@ -1,0 +1,32 @@
+=============== Sep 14, 2022 (KST) ===============
+23:17:50.703005 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:17:50.711517 db@open opening
+23:17:50.711981 version@stat F·[] S·0B[] Sc·[]
+23:17:50.714907 db@janitor F·2 G·0
+23:17:50.714925 db@open done T·3.392349ms
+23:17:50.715402 db@close closing
+23:17:50.715457 db@close done T·53.091µs
+=============== Sep 14, 2022 (KST) ===============
+23:31:26.011369 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:31:26.011847 version@stat F·[] S·0B[] Sc·[]
+23:31:26.011872 db@open opening
+23:31:26.011935 journal@recovery F·1
+23:31:26.013244 journal@recovery recovering @1
+23:31:26.016569 memdb@flush created L0@2 N·12 S·805B "H/\xa5..x(\xbf,v5":"\xa9n\xbb..g9M,v2"
+23:31:26.017453 version@stat F·[1] S·805B[805B] Sc·[0.25]
+23:31:26.028905 db@janitor F·3 G·0
+23:31:26.028923 db@open done T·17.044841ms
+23:31:26.029601 db@close closing
+23:31:26.029658 db@close done T·54.704µs
+=============== Sep 15, 2022 (KST) ===============
+00:01:49.388009 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:01:49.388378 version@stat F·[1] S·805B[805B] Sc·[0.25]
+00:01:49.388395 db@open opening
+00:01:49.388441 journal@recovery F·1
+00:01:49.388746 journal@recovery recovering @3
+00:01:49.392120 memdb@flush created L0@5 N·1 S·361B "eth..x(\xbf,v14":"eth..x(\xbf,v14"
+00:01:49.393374 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+00:01:49.405464 db@janitor F·4 G·0
+00:01:49.405486 db@open done T·17.085605ms
+00:01:49.406353 db@close closing
+00:01:49.406396 db@close done T·41.188µs

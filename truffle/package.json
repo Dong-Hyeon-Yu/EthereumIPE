@@ -1,0 +1,20 @@
+{
+  "name": "fp12mul",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "run": "truffle console --network local",
+    "test": "truffle test",
+    "migrate": "truffle migrate --reset"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "solc": "^0.8.16"
+  }
+}

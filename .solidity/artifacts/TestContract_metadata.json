@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "Debug",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[24]",
+						"name": "input",
+						"type": "uint256[24]"
+					}
+				],
+				"name": "test",
+				"outputs": [
+					{
+						"internalType": "uint256[12]",
+						"name": "c",
+						"type": "uint256[12]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"dev/etherium/Geth/.solidity/fp12Test.sol": "TestContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"dev/etherium/Geth/.solidity/fp12Test.sol": {
+			"keccak256": "0x440ea5e74ccb57290a7d1a1d49e076738b63244e31cfe801ab336ca7f989ab04",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://48d74808c96474530b64e518841dafd6e97de6e76e1dfe36859ce09d9f21b898",
+				"dweb:/ipfs/Qmb7TXNfCdq7VpErJ3Zuje3SXa6r4kC3TTHcXLiL9KnB3z"
+			]
+		}
+	},
+	"version": 1
+}

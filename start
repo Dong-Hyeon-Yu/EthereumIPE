@@ -1,0 +1,7 @@
+#rm ./data_testnet/geth -r
+#rm ./data_testnet/history
+
+./Geth/build/bin/geth init ./data_testnet/genesis.json --datadir ./data_testnet 
+
+./Geth/build/bin/geth --networkid 4649 --nodiscover --maxpeers 0 --datadir ./data_testnet --http --http.corsdomain="*" --http.api web3,eth,debug,personal,net --allow-insecure-unlock --unlock 0x076cb6de69635756c77189c4159bf64ea94cc157 --vmdebug --dev console 
+

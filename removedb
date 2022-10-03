@@ -1,0 +1,2 @@
+rm ./data_testnet/geth -r
+rm ./data_testnet/history
